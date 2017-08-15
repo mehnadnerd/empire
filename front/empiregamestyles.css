@@ -1,0 +1,258 @@
+/* empiregamestyles.css */
+div.class1 {
+    height: 100%;
+    width: 100%;
+    background-color: #dce5ef;
+    font-family: "verdana";
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.menu-bar-container {
+    height: 100%;
+    width: 10%;
+    background-color: #a8b4c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+    box-shadow: 2px 0px 2px 0px #87919b;
+}
+
+div.title {
+    font-family: "verdana";
+    flex-grow: 1
+}
+
+button.button {
+    background-color: #9fabb7;
+    flex-grow: 10;
+    margin: 10;
+    border: none;
+    box-shadow: 2px 5px 2px 0px #87919b;
+}
+
+.movefleetmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    margin-left: 500;
+    width: 500;
+    height: 600;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: #a8b4c1;
+}
+
+.move-fleet-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+}
+
+.move-fleet-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.move-fleet-close:hover,
+.move-fleet-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buildshipmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    margin-left: 500;
+    width: 500;
+    height: 600;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: #a8b4c1;
+}
+
+.build-ship-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+}
+
+.build-ship-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.build-ship-close:hover,
+.buid-ship-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.switchfleetmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    margin-left: 500;
+    width: 500;
+    height: 600;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: #a8b4c1;
+}
+
+.switch-fleet-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+}
+
+.switch-fleet-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.switch-fleet-close:hover,
+.switch-fleet-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.colonizemodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    margin-left: 500;
+    width: 500;
+    height: 600;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: #a8b4c1;
+}
+
+.colonize-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+}
+
+.colonize-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.colonize-close:hover,
+.colonize-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resourcesmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    margin-left: 500;
+    width: 500;
+    height: 600;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: #a8b4c1;
+}
+
+.resources-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+}
+
+.resources-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.resources-close:hover,
+.resources-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.map {
+    height: 100%;
+    width: 90%;
+    background-color: #dce5ef;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.planet {
+    height: 10px;
+    width: 10px;
+    font-size: 10px;
+    margin: 15px;
+    border-style: none;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.move-fleet-submit {
+    width: 65px;
+    height: 20px;
+    text-align: center;
+    border-style: none;
+    background-color: #dce5ef;
+}
+
+.build-ship-buttons {
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    border-style: none;
+    background-color: #dce5ef;
+}
+
+.refresh-button {
+    background-color: #9fabb7;
+    flex-grow: 3;
+    margin: 10px;
+    border: none;
+    box-shadow: 2px 5px 2px 0px #87919b;
+}

@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>The Empire Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="empiregamestyles.css"/>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2013/07/12/18/42/swords-153752_960_720.png"/>
+</head>
+<body>
+
+<div class="class1">
+    <div class="menu-bar-container">
+        <div class="title" style="margin-left: 3px;">
+            The Empire Game
+        </div>
+
+        <button id="move-fleet" class="button">
+            Move a Fleet
+        </button>
+
+        <button id="build-ship" class="button">
+            Build a Ship
+        </button>
+
+        <button id="switch-fleet" class="button">
+            Switch Between Fleets
+        </button>
+
+        <button id="colonize" class="button">
+            Colonize a Planet
+        </button>
+
+        <button class="button" id="start-request">
+            5
+        </button>
+
+        <button class="button">
+            6
+        </button>
+
+        <button class="button" id="resources">
+            Resources
+        </button>
+
+        <button class="refresh-button" type="button" id="refresh">Refresh</button>
+
+        <div id="move-fleet-modal" class="movefleetmodal">
+
+            <div class="move-fleet-modal-content">
+                <span class="move-fleet-close">&times;</span>
+                <p>Move a Fleet</p>
+                <div>
+
+                    <select id="fleet-selector" class="move-fleet-submit">
+                    </select><br>
+                    <br>
+
+                    X Destination: <input type="text" id="move-fleet-x-destination"><br>
+                    <br>
+                    Y Destination: <input type="text" id="move-fleet-y-destination"><br>
+                    <br>
+
+                    <button type="button" id="move-fleet-submit" class="move-fleet-submit" onclick="moveFleet()">Move
+                    </Button>
+                    <br>
+                    <br>
+                    <div id="which-fleet"></div>
+                    <div id="fleet-moved-to"></div>
+                    <div id="fleet-moved-to-y"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="build-ship-modal" class="buildshipmodal">
+
+            <div class="build-ship-modal-content">
+                <span class="build-ship-close">&times;</span>
+                <p>Build a Ship</p>
+                <select id="build-planet-selector" class="build-ship-buttons">
+                </select><br>
+                <br>
+
+                Food: <input type="text" id="build-ship-food"><br>
+                <br>
+                Metal: <input type="text" id="build-ship-metal"><br>
+                <br>
+
+                <button type="button" id="build-ship-submit" class="build-ship-buttons" onclick="buildShip()">Build
+                </Button>
+                <br>
+                <br>
+                <div id="which-planet"></div>
+                <div id="build-ship-food-used"></div>
+                <div id="build-ship-metal-used"></div>
+
+                <br>
+            </div>
+
+        </div>
+        <div id="switch-fleet-modal" class="switchfleetmodal">
+
+            <div class="switch-fleet-modal-content">
+                <span class="switch-fleet-close">&times;</span>
+                <p>Move a Ship Between Fleets</p>
+
+                <div>From fleet:</div>
+                <select id="from-fleet-selector" class="build-ship-buttons">
+                </select>
+                <div>Ship:</div>
+                <select id="ship-selector" class="build-ship-buttons">
+                </select>
+                <div>To fleet:</div>
+                <select id="to-fleet-selector" class="build-ship-buttons">
+                </select>
+                <button type="button" id="switch-fleet-submit" class="build-ship-buttons" onclick="switchFleet()">Switch
+                </Button>
+                <br>
+                <br>
+            </div>
+
+        </div>
+        <div id="colonize-modal" class="colonizemodal">
+
+            <div class="colonize-modal-content">
+                <span class="colonize-close">&times;</span>
+                <p>Colonize a Planet</p>
+                <select id="colonize-planet-selector" class="build-ship-buttons">
+                </select><br>
+                <br>
+                <button type="button" id="colonize-planet-submit" class="build-ship-buttons" onclick="colonizePlanet()">
+                    Colonize
+                </Button>
+                <br>
+                <br>
+                <div id="colonize-which-planet"></div>
+            </div>
+        </div>
+        <div id="resources-modal" class="resourcesmodal">
+            <div class="resources-modal-content">
+                <span class="resources-close">&times;</span>
+                <p>Resources</p>
+                <table id="resources-table">
+                    <tr>
+                        <th></th>
+                        <th>Food</th>
+                        <th>Fuel</th>
+                        <th>Metal</th>
+                    </tr>
+                    <tr>
+                        <th>Value</th>
+                        <td id="food-value"></td>
+                        <td id="fuel-value"></td>
+                        <td id="metal-value"></td>
+                    </tr>
+                    <tr>
+                        <th>Production</th>
+                        <td id="food-prod"></td>
+                        <td id="fuel-prod"></td>
+                        <td id="metal-prod"></td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="map" id="mapbase">
+        Something isn't working correctly
+    </div>
+</div>
+<script src="empiregamedata.js" type="text/javascript"></script>
+<script src="empiregamegui.js" type="text/javascript"></script>
+<script src="empiregamemap.js" type="text/javascript"></script>
+<script src="empiregamecontact.js" type="text/javascript"></script>
+</body>
+</html>
